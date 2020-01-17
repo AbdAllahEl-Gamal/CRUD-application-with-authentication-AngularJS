@@ -1,0 +1,54 @@
+.login {
+    display: table;
+    width: 400px;
+    height: 100%;
+    margin: 0 auto;
+    font-size: 16px;
+    form {
+        display: table-cell;
+        vertical-align: middle;
+        background: #ebebeb;
+        padding: 12px;
+
+        label {
+            display: block;
+            
+            input {
+                box-sizing: border-box;
+                display: block;
+                width: 100%;
+                border-width: 1px;
+                border-style: solid;
+                padding: 16px;
+                outline: 0;
+                font-family: inherit;
+                font-size: 0.95em;
+            }
+        
+            .error {
+                margin-top: -20px;
+                padding: .5em;
+                display: inline-block;
+                font-size: .9em;
+                color: rgb(230, 14, 14);
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .cta {
+        background: rgb(1, 29, 51);
+        border-color: transparent;
+        color: #fff;
+        cursor: pointer;
+        font-family: 'Montserrat';
+
+        &:hover {
+            background: #17c;
+        }
+
+        &:focus {
+            border-color: #05a;
+        }
+    }
+}

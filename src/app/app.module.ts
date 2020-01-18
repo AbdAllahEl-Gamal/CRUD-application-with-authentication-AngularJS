@@ -9,6 +9,9 @@ import { NavComponent } from './components/nav/nav.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { PostsComponent } from './components/posts/posts.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { AddPostComponent } from './components/add-post/add-post.component';
+import { EditPostComponent } from './components/edit-post/edit-post.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { PostsComponent } from './components/posts/posts.component';
     NavComponent,
     HomeComponent,
     LoginComponent,
-    PostsComponent
+    PostsComponent,
+    PageNotFoundComponent,
+    AddPostComponent,
+    EditPostComponent
   ],
   imports: [
     BrowserModule,

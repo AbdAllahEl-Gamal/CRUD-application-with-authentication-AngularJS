@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
 
-  appTitle: string = 'Abdallah Elgamal';
+  userName: string = 'Abdallah Elgamal';
 
   constructor() { }
 

@@ -1,0 +1,46 @@
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+
+    &:hover, &:focus {
+        outline: none;
+        border: none;
+    }
+}
+
+textarea {
+    resize: none;
+}
+
+input[type=submit] {
+    background: rgb(1, 29, 51);
+    border-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Montserrat';
+    width: 100%;
+    padding: 12px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    &:hover, &:focus {
+        background: rgb(1, 29, 51);
+        border-color: none;
+        outline: none;
+    }
+}
+  
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+}

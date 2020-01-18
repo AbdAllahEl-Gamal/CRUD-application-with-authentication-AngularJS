@@ -1,3 +1,7 @@
+:host {
+    background: blue;
+}
+
 .login {
     display: table;
     width: 400px;
@@ -23,6 +27,7 @@
                 outline: 0;
                 font-family: inherit;
                 font-size: 0.95em;
+                margin-bottom: 15px;
             }
         
             .error {
@@ -32,23 +37,25 @@
                 font-size: .9em;
                 color: rgb(230, 14, 14);
                 margin-bottom: 20px;
+                font-weight: bold;
             }
         }
     }
 
-    .cta {
+    .login-button {
         background: rgb(1, 29, 51);
         border-color: transparent;
         color: #fff;
         cursor: pointer;
         font-family: 'Montserrat';
+        width: 100%;
+        padding: 10px;
+        text-transform: uppercase;
 
-        &:hover {
-            background: #17c;
-        }
-
-        &:focus {
-            border-color: #05a;
+        &:hover, &:focus {
+            background: rgb(1, 29, 51);
+            border-color: none;
+            outline: none;
         }
     }
 }

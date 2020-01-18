@@ -1,0 +1,93 @@
+.posts-container {
+    width: 90%;
+    margin: 20px auto;
+
+    .add-button {
+        background: #a107ab;
+        border-color: transparent;
+        color: #fff;
+        cursor: pointer;
+        font-family: 'Montserrat';
+        padding: 10px;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 10px;
+
+        &:hover, &:focus {
+            background: #a107ab;
+            border-color: none;
+            outline: none;
+        }
+    }
+
+    .posts-table {
+        font-family: 'Montserrat';
+        border-collapse: collapse;
+        width: 100%;
+
+        td, th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background: rgb(1, 29, 51);
+            color: white;
+        }
+
+        tr {  
+            &:hover {
+                background-color: #ddd;
+            }
+
+            &:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+        }   
+
+        .edit-delete-column {
+            text-align: center;
+        }
+
+        .delete-button {
+            background: #ce1919;
+            border-color: transparent;
+            color: #fff;
+            cursor: pointer;
+            font-family: 'Montserrat';
+            padding: 10px;
+            text-transform: uppercase;
+            font-weight: bold;
+
+            &:hover, &:focus {
+                background: #ce1919;
+                border-color: none;
+                outline: none;
+            }
+        }
+
+        .edit-button {
+            background: #178215;
+            border-color: transparent;
+            color: #fff;
+            cursor: pointer;
+            font-family: 'Montserrat';
+            padding: 10px;
+            text-transform: uppercase;
+            font-weight: bold;
+
+            &:hover, &:focus {
+                background: #178215;
+                border-color: none;
+                outline: none;
+            }
+        }
+
+        .hidden {
+            display: none;
+        }
+    }
+}

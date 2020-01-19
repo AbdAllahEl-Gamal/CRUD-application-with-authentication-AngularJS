@@ -27,12 +27,13 @@ export class AddPostComponent implements OnInit {
   }
 
   onSubmit() {
-    this.postsService.createPost(this.addForm.value).subscribe( data => {
-        if(this.addForm.invalid){
-          return;
-        }
-        this.router.navigate(['posts']);
-      });
+    this.postsService.createPost(this.addForm.value).subscribe( data => {  
+      console.log(data);
+      if(this.addForm.invalid){
+        return;
+      }
+      this.router.navigate(['posts']);
+    });
   }
 
 }

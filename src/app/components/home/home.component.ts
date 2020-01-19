@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  userName = '';
+  password = '';
+  token = '';
+
   constructor() { }
 
   ngOnInit() {
+    this.userName = sessionStorage.getItem('loggedUser');
+    this.password = sessionStorage.getItem('loggedUserPassword');
+    this.token = localStorage.getItem('ACCESS_TOKEN');
   }
 
 }

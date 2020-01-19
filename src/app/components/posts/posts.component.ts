@@ -15,20 +15,21 @@ export class PostsComponent implements OnInit {
   constructor(private router: Router, private postsService: PostsService) { }
 
   ngOnInit() {
-    // if(!window.localStorage.getItem('token')) {
-    //   this.router.navigate(['login']);
-    //   return;
-    // }
+    if(!window.localStorage.getItem('ACCESS_TOKEN')) {
+      this.router.navigate(['login']);
+      return;
+    }
+
     this.postsService.getPosts().subscribe( (list: Array<Post>) => {
-          this.posts = list;
-          console.log(this.posts);
-      });
+      this.posts = list;
+      console.log(this.posts);
+    });
   }
 
   deletePost(post: Post): void {
     this.postsService.deletePost(post.id).subscribe( data => {
-        this.posts = this.posts.filter(u => u !== post);
-      })
+      this.posts = this.posts.filter(u => u !== post);
+    })
   };
 
   editPost(post: Post): void {

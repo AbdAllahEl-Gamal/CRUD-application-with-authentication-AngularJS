@@ -10,6 +10,8 @@ export class AuthService {
 
   public login(userInfo: User) {
     localStorage.setItem('ACCESS_TOKEN', "access_token");
+    sessionStorage.setItem('loggedUser', userInfo.username);
+    sessionStorage.setItem('loggedUserPassword', userInfo.password);
   }
 
   public isLoggedIn() {

@@ -43,12 +43,8 @@ export class EditPostComponent implements OnInit {
       .pipe(first())
       .subscribe(
         data => {
-          // if(data.status === 200) {
-            alert('Post updated successfully.');
-            this.router.navigate(['posts']);
-          // }else {
-          //   alert(data.message);
-          // }
+          alert('Post updated successfully.');
+          this.router.navigate(['posts']);
         },
         error => {
           alert(error);

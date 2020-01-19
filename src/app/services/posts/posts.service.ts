@@ -16,17 +16,17 @@ export class PostsService {
     return this.http.get<Array<Post>>(this.baseUrl);
   }
 
-  getPostById(id: number): Observable<Array<Post>> {
-    return this.http.get<Array<Post>>(this.baseUrl + '/' + id);
+  getPostById(id: number): Observable<ApiResponse> {
+    return this.http.get<ApiResponse>(this.baseUrl + '/' + id);
   }
 
   createPost(post: Post): Observable<ApiResponse> {
     return this.http.post<ApiResponse>(this.baseUrl, post);
   }
 
-  updatePost(post: Post): Observable<Array<Post>> {
+  updatePost(post: Post): Observable<ApiResponse> {
     console.log(post);
-    return this.http.put<Array<Post>>(this.baseUrl + '/' + post.id, post);
+    return this.http.put<ApiResponse>(this.baseUrl + '/' + post.id, post);
   }
 
   deletePost(id: number): Observable<ApiResponse> {

@@ -1,7 +1,7 @@
+<div class="my-container">
 <div class="login">
   <form [formGroup]="loginForm" (ngSubmit)="login()">
-
-      <h5 *ngIf="success">Your form is valid!</h5>
+      <img src="../../../assets/images/angular-logo.png" alt="">
 
       <label>
         <input type="text" placeholder="Username" formControlName="username">
@@ -20,4 +20,5 @@
       <input type="submit" value="Login" class="login-button">
     
   </form>
+</div>
 </div>
